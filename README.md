@@ -1,5 +1,5 @@
 
-![Logo](https://cdn-icons-png.flaticon.com/512/114/114707.png)
+![Logo](https://cdn-icons-png.flaticon.com/512/2228/2228417.png)
 
 
 # Synthesizer VERA-01 (on working)
