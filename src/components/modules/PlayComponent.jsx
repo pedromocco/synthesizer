@@ -1,6 +1,56 @@
 import * as Tone from "tone";
-import { synth } from "./SynthComponent";
+import synth from "./SynthComponent"
 
+export async function PlayC3() {
+  await Tone.start();
+  synth.triggerAttackRelease("C3", "8n");
+}
+export async function PlayCsus3() {
+  await Tone.start();
+  synth.triggerAttackRelease("C#3", "8n");
+}
+export async function PlayD3() {
+  await Tone.start();
+  synth.triggerAttackRelease("D3", "8n");
+}
+export async function PlayDsus3() {
+  await Tone.start();
+  synth.triggerAttackRelease("D#3", "8n");
+}
+export async function PlayE3() {
+  await Tone.start();
+  synth.triggerAttackRelease("E3", "8n");
+}
+export async function PlayF3() {
+  await Tone.start();
+  synth.triggerAttackRelease("F3", "8n");
+}
+export async function PlayFsus3() {
+  await Tone.start();
+  synth.triggerAttackRelease("F#3", "8n");
+}
+export async function PlayG3() {
+  await Tone.start();
+  synth.triggerAttackRelease("G3", "8n");
+}
+export async function PlayGsus3() {
+  await Tone.start();
+  synth.triggerAttackRelease("G#3", "8n");
+}
+export async function PlayA3() {
+  await Tone.start();
+  synth.triggerAttackRelease("A3", "8n");
+}
+export async function PlayAsus3() {
+  await Tone.start();
+  synth.triggerAttackRelease("A#3", "8n");
+}
+export async function PlayB3() {
+  await Tone.start();
+  synth.triggerAttackRelease("B3", "8n");
+}
+
+//_______________________________________
 export async function PlayC4() {
   await Tone.start();
   synth.triggerAttackRelease("C4", "8n");
@@ -100,155 +150,105 @@ export async function PlayB5() {
   synth.triggerAttackRelease("B5", "8n");
 }
 
-//_______________________________________
-export async function PlayC6() {
-  await Tone.start();
-  synth.triggerAttackRelease("C6", "8n");
-}
-export async function PlayCsus6() {
-  await Tone.start();
-  synth.triggerAttackRelease("C#6", "8n");
-}
-export async function PlayD6() {
-  await Tone.start();
-  synth.triggerAttackRelease("D6", "8n");
-}
-export async function PlayDsus6() {
-  await Tone.start();
-  synth.triggerAttackRelease("D#6", "8n");
-}
-export async function PlayE6() {
-  await Tone.start();
-  synth.triggerAttackRelease("E6", "8n");
-}
-export async function PlayF6() {
-  await Tone.start();
-  synth.triggerAttackRelease("F6", "8n");
-}
-export async function PlayFsus6() {
-  await Tone.start();
-  synth.triggerAttackRelease("F#6", "8n");
-}
-export async function PlayG6() {
-  await Tone.start();
-  synth.triggerAttackRelease("G6", "8n");
-}
-export async function PlayGsus6() {
-  await Tone.start();
-  synth.triggerAttackRelease("G#6", "8n");
-}
-export async function PlayA6() {
-  await Tone.start();
-  synth.triggerAttackRelease("A6", "8n");
-}
-export async function PlayAsus6() {
-  await Tone.start();
-  synth.triggerAttackRelease("A#6", "8n");
-}
-export async function PlayB6() {
-  await Tone.start();
-  synth.triggerAttackRelease("B6", "8n");
-}
-
 export function PlayNote(event) {
   switch (event.keyCode) {
     case 90:
-      PlayC4();
+      PlayC3();
       break;
     case 83:
-      PlayCsus4();
+      PlayCsus3();
       break;
     case 88:
-      PlayD4();
+      PlayD3();
       break;
     case 68:
-      PlayDsus4();
+      PlayDsus3();
       break;
     case 67:
-      PlayE4();
+      PlayE3();
       break;
     case 86:
-      PlayF4();
+      PlayF3();
       break;
     case 71:
-      PlayFsus4();
+      PlayFsus3();
       break;
     case 66:
-      PlayG4();
+      PlayG3();
       break;
     case 72:
-      PlayGsus4();
+      PlayGsus3();
       break;
     case 78:
-      PlayA4();
+      PlayA3();
       break;
     case 74:
-      PlayAsus4();
+      PlayAsus3();
       break;
     case 77:
-      PlayB4();
+      PlayB3();
       break;
 
     case 188:
-      PlayC5();
+      PlayC4();
       break;
     case 76:
-      PlayCsus5();
+      PlayCsus4();
       break;
     case 190:
-      PlayD5();
+      PlayD4();
       break;
     case 49:
-      PlayDsus5();
+      PlayDsus4();
       break;
     case 81:
-      PlayE5();
+      PlayE4();
       break;
     case 87:
-      PlayF5();
+      PlayF4();
       break;
     case 51:
-      PlayFsus5();
+      PlayFsus4();
       break;
     case 69:
-      PlayG5();
+      PlayG4();
       break;
     case 52:
-      PlayGsus5();
+      PlayGsus4();
       break;
     case 82:
-      PlayA5();
+      PlayA4();
       break;
     case 53:
-      PlayAsus5();
+      PlayAsus4();
       break;
     case 84:
-      PlayB5();
+      PlayB4();
       break;
 
     case 89:
-      PlayC6();
+      PlayC5();
       break;
     case 55:
-      PlayCsus6();
+      PlayCsus5();
       break;
     case 85:
-      PlayD6();
+      PlayD5();
       break;
     case 56:
-      PlayDsus6();
+      PlayDsus5();
       break;
     case 73:
-      PlayE6();
+      PlayE5();
       break;
     case 79:
-      PlayF6();
+      PlayF5();
       break;
     case 48:
-      PlayFsus6();
+      PlayFsus5();
       break;
     case 80:
-      PlayG6();
+      PlayG5();
       break;
   }
 }

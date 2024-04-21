@@ -10,16 +10,20 @@ let synthAttack = 0, //Valor máximo: 2
 let synthOscType = ["sine", "square", "triangle", "sawtooth"],
   synthOscSelector = 2;
 
-let synth = new Tone.Synth({
-  oscillator: {
-    type: synthOscType[synthOscSelector],
-  },
-  envelope: {
-    attack: synthAttack,
-    decay: synthDecay,
-    sustain: synthSustain,
-    release: synthRelease,
-  },
-}).toDestination();
+function synth(){  
+  let esynth = new Tone.Synth({
+    oscillator: {
+      type: synthOscType[0],
+    },
+    envelope: {
+      attack: 0,
+      decay: 2,
+      sustain: 0,
+      release: 0.5,
+    },
+  }).toDestination();
 
-export { synth };
+  return esynth
+}
+
+export default synth()

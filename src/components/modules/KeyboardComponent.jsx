@@ -1,4 +1,16 @@
 import {
+  PlayC3,
+  PlayCsus3,
+  PlayD3,
+  PlayDsus3,
+  PlayE3,
+  PlayF3,
+  PlayFsus3,
+  PlayG3,
+  PlayGsus3,
+  PlayA3,
+  PlayAsus3,
+  PlayB3,
   PlayC4,
   PlayCsus4,
   PlayD4,
@@ -19,18 +31,6 @@ import {
   PlayF5,
   PlayFsus5,
   PlayG5,
-  PlayGsus5,
-  PlayA5,
-  PlayAsus5,
-  PlayB5,
-  PlayC6,
-  PlayCsus6,
-  PlayD6,
-  PlayDsus6,
-  PlayE6,
-  PlayF6,
-  PlayFsus6,
-  PlayG6,
   PlayNote,
 } from "./PlayComponent";
 import "./KeyboardStyle.css";
@@ -41,100 +41,100 @@ export default function KeyBoard() {
   return (
     <>
       <ul className="piano-keys">
-        <li className="key white" onClick={PlayC4}>
+        <li className="key white" onClick={PlayC3}>
           <span>Z</span>
         </li>
-        <li className="key black" onClick={PlayCsus4}>
+        <li className="key black" onClick={PlayCsus3}>
           <span>S</span>
         </li>
-        <li className="key white" onClick={PlayD4}>
+        <li className="key white" onClick={PlayD3}>
           <span>X</span>
         </li>
-        <li className="key black" onClick={PlayDsus4}>
+        <li className="key black" onClick={PlayDsus3}>
           <span>D</span>
         </li>
-        <li className="key white" onClick={PlayE4}>
+        <li className="key white" onClick={PlayE3}>
           <span>C</span>
         </li>
-        <li className="key white" onClick={PlayF4}>
+        <li className="key white" onClick={PlayF3}>
           <span>V</span>
         </li>
-        <li className="key black" onClick={PlayFsus4}>
+        <li className="key black" onClick={PlayFsus3}>
           <span>G</span>
         </li>
-        <li className="key white" onClick={PlayG4}>
+        <li className="key white" onClick={PlayG3}>
           <span>B</span>
         </li>
-        <li className="key black" onClick={PlayGsus4}>
+        <li className="key black" onClick={PlayGsus3}>
           <span>H</span>
         </li>
-        <li className="key white" onClick={PlayA4}>
+        <li className="key white" onClick={PlayA3}>
           <span>N</span>
         </li>
-        <li className="key black" onClick={PlayAsus4}>
+        <li className="key black" onClick={PlayAsus3}>
           <span>J</span>
         </li>
-        <li className="key white" onClick={PlayB4}>
+        <li className="key white" onClick={PlayB3}>
           <span>M</span>
         </li>
-        <li className="key white" onClick={PlayC5}>
+        <li className="key white" onClick={PlayC4}>
           <span>,</span>
         </li>
-        <li className="key black" onClick={PlayCsus5}>
+        <li className="key black" onClick={PlayCsus4}>
           <span>L</span>
         </li>
-        <li className="key white" onClick={PlayD5}>
+        <li className="key white" onClick={PlayD4}>
           <span>.</span>
         </li>
-        <li className="key black" onClick={PlayDsus5}>
+        <li className="key black" onClick={PlayDsus4}>
           <span>1</span>
         </li>
-        <li className="key white" onClick={PlayE5}>
+        <li className="key white" onClick={PlayE4}>
           <span>Q</span>
         </li>
-        <li className="key white" onClick={PlayF5}>
+        <li className="key white" onClick={PlayF4}>
           <span>W</span>
         </li>
-        <li className="key black" onClick={PlayFsus5}>
+        <li className="key black" onClick={PlayFsus4}>
           <span>3</span>
         </li>
-        <li className="key white" onClick={PlayG5}>
+        <li className="key white" onClick={PlayG4}>
           <span>E</span>
         </li>
-        <li className="key black" onClick={PlayGsus5}>
+        <li className="key black" onClick={PlayGsus4}>
           <span>4</span>
         </li>
-        <li className="key white" onClick={PlayA5}>
+        <li className="key white" onClick={PlayA4}>
           <span>R</span>
         </li>
-        <li className="key black" onClick={PlayAsus5}>
+        <li className="key black" onClick={PlayAsus4}>
           <span>5</span>
         </li>
-        <li className="key white" onClick={PlayB5}>
+        <li className="key white" onClick={PlayB4}>
           <span>T</span>
         </li>
-        <li className="key white" onClick={PlayC6}>
+        <li className="key white" onClick={PlayC5}>
           <span>Y</span>
         </li>
-        <li className="key black" onClick={PlayCsus6}>
+        <li className="key black" onClick={PlayCsus5}>
           <span>7</span>
         </li>
-        <li className="key white" onClick={PlayD6}>
+        <li className="key white" onClick={PlayD5}>
           <span>U</span>
         </li>
-        <li className="key black" onClick={PlayDsus6}>
+        <li className="key black" onClick={PlayDsus5}>
           <span>8</span>
         </li>
-        <li className="key white" onClick={PlayE6}>
+        <li className="key white" onClick={PlayE5}>
           <span>I</span>
         </li>
-        <li className="key white" onClick={PlayF6}>
+        <li className="key white" onClick={PlayF5}>
           <span>O</span>
         </li>
-        <li className="key black" onClick={PlayFsus6}>
+        <li className="key black" onClick={PlayFsus5}>
           <span>0</span>
         </li>
-        <li className="key white" onClick={PlayG6}>
+        <li className="key white" onClick={PlayG5}>
           <span>P</span>
         </li>
       </ul>
