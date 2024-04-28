@@ -10,7 +10,7 @@ let synthAttack = 0, //Valor máximo: 2
 let synthOscType = ["sine", "square", "triangle", "sawtooth"],
   synthOscSelector = 2;
 
-function synth(){  
+function synth() {
   let esynth = new Tone.Synth({
     oscillator: {
       type: synthOscType[0],
@@ -23,7 +23,7 @@ function synth(){
     },
   }).toDestination();
 
-  return esynth
+  return esynth;
 }
 
-export default synth()
+export default synth();
